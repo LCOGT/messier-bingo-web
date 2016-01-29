@@ -18,10 +18,10 @@
    "name": "Unknown"
   },
   "image": {
-   "about": "http://lcogt.net/files/messier/M58.jpg",
+   "about": "images/objects/M58.jpg",
    "fits": "",
    "label": "Image",
-   "thumb": "http://lcogt.net/files/messier/M58_thumbnail.jpg"
+   "thumb": "images/objects/M58.jpg"
   },
   "instr": {
    "about": "http://lcogt.net/site/siding-spring",

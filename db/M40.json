@@ -18,10 +18,10 @@
    "name": "Unknown"
   },
   "image": {
-   "about": "http://lcogt.net/files/messier/M40.jpg",
+   "about": "images/objects/M40.jpg",
    "fits": "",
    "label": "Image",
-   "thumb": "http://lcogt.net/files/messier/M40_thumbnail.jpg"
+   "thumb": "images/objects/M40.jpg"
   },
   "instr": {
    "about": "http://lcogt.net/site/mcdonald",

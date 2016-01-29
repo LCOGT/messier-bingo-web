@@ -18,10 +18,10 @@
    "name": "Unknown"
   },
   "image": {
-   "about": "http://lcogt.net/files/bfulton/m82_Lrgb_flat_small.jpg",
+   "about": "images/objects/m82_Lrgb_flat_small.jpg",
    "fits": "",
    "label": "Image",
-   "thumb": "http://lcogt.net/files/styles/fourcol-image/public/bfulton/m82_Lrgb_flat_small.jpg"
+   "thumb": "images/objects/m82_Lrgb_flat_small.jpg"
   },
   "instr": {
    "about": "http://lcogt.net/observations/ogg/2m0a",
