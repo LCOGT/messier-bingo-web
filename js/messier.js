@@ -1,10 +1,20 @@
 /*!
 	Messier Bingo - Javascript Version
-	(c) Stuart Lowe/LCOGT
-*/
-/*
-	TODO:
-	Add a hand to the pantograph
+	(c) 2016 Stuart Lowe - Edward Gomez - LCOGT
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 
 	USAGE:
 		<script src="js/jquery-1.10.0.min.js" type="text/javascript"></script>
@@ -16,7 +26,7 @@
 			});
 		// -->
 		</script>
-		
+
 	OPTIONS (default values in brackets):
 */
 
@@ -121,7 +131,7 @@
 		});
 		var handleTouch = function(event){
 			event.preventDefault();
-	
+
 			var simulatedEvent;
 			var touches = event.changedTouches,
 			first = touches[0],
@@ -132,7 +142,7 @@
 					break;
 				case 'touchmove':
 					type = ['mousemove'];
-					break;        
+					break;
 				case 'touchend':
 					type = ['mouseup'];
 					break;
@@ -181,12 +191,12 @@
 		return r;
 	};
 
-	
+
 	/*! Messier Bingo */
 	function MessierBingo(inp){
 
 		this.version = "0.1";
-	
+
 		// Set some variables
 		this.q = $.query();    // Query string
 		this.id = 'paper';
@@ -222,7 +232,7 @@
 		// Country codes at http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 		this.language = (navigator.language) ? navigator.language : navigator.userLanguage;			// Set the user language
 		this.langcode = this.language.substring(0,2);
-		
+
 		var el = $('#panel .inner .padded');
 		this.phrasebook = {
 			"language": { "code": "en", "name": "English", "alignment": "left", "translator": "Stuart Lowe" },
@@ -418,7 +428,7 @@
 			{ 'm': 'M109', 'ngc': 'NGC 3992', 'name': '', 'type':'Barred spiral galaxy', 'distance': 55000, 'constellation': 'Ursa Major', 'mag': 11.0 },
 			{ 'm': 'M110', 'ngc': 'NGC 205', 'name': '', 'type':'Dwarf elliptical galaxy', 'distance': 2200, 'constellation': 'Andromeda', 'mag': 10.0 }
 		]
-		
+
 		this.resize();
 
 		if($.support.transparency){
@@ -456,7 +466,7 @@
 		this.tick();
 
 		this.reset();
-		
+
 		return this;
 	}
 
@@ -517,7 +527,7 @@
 		$('#glass-small').css({'left':Math.round(0.054*this.wide)+'px','width':Math.round(0.156*this.wide)+'px','top':Math.round(0.074*this.tall)+'px','height':Math.round(0.208*this.tall)+'px'});
 		if(this.pantograph) this.pantograph[0].resize();
 		if(this.pantograph) this.pantograph[1].resize();
-		
+
 		this.drawBox();
 
 		return this;
@@ -611,7 +621,7 @@
 		for(var h = 0 ; h < this.nexttext.length ; h++) todo.push(this.nexttext[h]);
 		for(var h = 0 ; h < this.poweredby.length ; h++) todo.push(this.poweredby[h]);
 		for(var h = 0 ; h < this.dialbg.length ; h++) todo.push(this.dialbg[h]);
-		
+
 		var h, m, i, t;
 		for(var h = 0 ; h < todo.length ; h++){
 			t = todo[h].data('transform');
@@ -661,7 +671,7 @@
 		for(var h = 0 ; h < this.nexttext.length ; h++) this.nexttext[h].remove();
 		for(var h = 0 ; h < this.poweredby.length ; h++) this.poweredby[h].remove();
 		for(var h = 0 ; h < this.dialbg.length ; h++) this.dialbg[h].remove();
-		
+
 	}
 
 	MessierBingo.prototype.drawBox = function(){
@@ -785,7 +795,7 @@
 			this.messier.push(this.box.image('images/messier_eyes.png',130,121,28,6));
 			this.messier.push(this.box.image('images/messier_noeyes.png',85,80,90,110));
 		}else{
-			this.messier.push(this.box.image('images/messier.png',85,80,90,110));		
+			this.messier.push(this.box.image('images/messier.png',85,80,90,110));
 		}
 
 		this.portal = this.box.set();
@@ -837,7 +847,7 @@
 		// Messier label
 		this.makeScrew(70,257,4);
 		this.makeScrew(202,257,4);
-		
+
 
 		this.clock = this.box.set();
 		this.clock.push(
@@ -871,7 +881,7 @@
 		);
 		this.box.transformer(this.dialhandle[0],['R',0,this.chrome.dial.ox,this.chrome.dial.oy])
 		this.box.transformer(this.dialhandle[1],['R',0,this.chrome.dial.ox,this.chrome.dial.oy])
-		
+
 		this.dial.data('mb',this).click(function(e){ this.data('mb').toggleDial(); });
 		this.dialhandle.data('mb',this).click(function(e){ this.data('mb').toggleDial(); });
 
@@ -890,7 +900,7 @@
 
 		this.resetbutton = this.box.set();
 		this.resetbutton.push(
-			this.nextbutton[0].clone(), this.nextbutton[1].clone(), this.nextbutton[2].clone(), 
+			this.nextbutton[0].clone(), this.nextbutton[1].clone(), this.nextbutton[2].clone(),
 			this.box.path('M'+this.chrome.button.ox+','+this.chrome.button.oy+'m '+(-r*0.2)+','+(r*0.4)+' c '+(r*0.6)+',0 '+(r*0.4)+','+(-r*0.4)+' '+(r*0.1)+','+(-r*0.3)+' l 0,'+(r*0.2)+' '+(-r*0.4)+','+(-r*0.4)+' '+(r*0.4)+','+(-r*0.4)+' 0,'+(r*0.2)+' c '+(r*0.1)+',0 '+(r*0.5)+',0 '+(r*0.5)+','+(r*0.4)+' 0,'+(r*0.4)+' '+(-r*0.5)+','+(r*0.4)+' '+(-r*0.5)+','+(r*0.3)+' z').attr({'fill':this.colours.shadow,'stroke':0,'cursor':'pointer','opacity':1})
 		);
 		this.resetbutton.data('mb',this).click(function(e){ this.data('mb').reset(); }).mouseover(function(){ this.data('mb').resetbutton[4].attr({'fill':this.data('mb').colours.deepshadow}); }).mouseout(function(){ this.data('mb').resetbutton[4].attr({'fill':this.data('mb').colours.shadow}); }).hide();
@@ -970,10 +980,10 @@
 			$('#panel').html(data);
 		}
 	}
-	
+
 	MessierBingo.prototype.toggleDial = function(){
 		this.setDial(!this.dialon);
-		if(!this.pantograph[0].on && this.pantograph[1].on) this.pantograph[1].toggle(); 
+		if(!this.pantograph[0].on && this.pantograph[1].on) this.pantograph[1].toggle();
 		this.pantograph[0].toggle();
 		return this;
 	}
@@ -989,7 +999,7 @@
 		}
 		return this;
 	}
-	
+
 	MessierBingo.prototype.updateRotation = function(el,ang,ox,oy){
 		var t,m,i;
 		t = el.transform();
@@ -1004,7 +1014,7 @@
 		el.transform(t);
 		return this;
 	}
-	
+
 	MessierBingo.prototype.setTime = function(){
 		var now = new Date();
 		var h = (((now.getUTCHours()+now.getUTCMinutes()/60) % 12)*360/12);
@@ -1022,7 +1032,7 @@
 		this.messier[0].attr({x:eye.x+eye.dx*((dx < 0) ? dx/eye.x : dx/(this.wide-eye.x)),y:eye.y+eye.dy*((dy < 0) ? dy/eye.y : dy/(this.tall-eye.y))})
 		return this;
 	}
-	
+
 	MessierBingo.prototype.makePipe = function(x,y,dx,dy,t){
 		var r = t;
 		this.pipes.push(
@@ -1032,7 +1042,7 @@
 		);
 		return this;
 	}
-	
+
 	MessierBingo.prototype.makeScrew = function(ox,oy,r,ang){
 		var rad = r*1.0
 		if(typeof ang!=="number") ang = Math.random()*180;
@@ -1041,11 +1051,11 @@
 		var dx = r/10;
 		var dy = r/7;
 		var x1,y1,x2,y2,x3,y3,x4,y4;
-		x1 = ox + r*Math.cos((ang+a)*d2r);	
+		x1 = ox + r*Math.cos((ang+a)*d2r);
 		y1 = oy + r*Math.sin((ang+a)*d2r);
 		x2 = ox + r*Math.cos((ang+180-a)*d2r);
 		y2 = oy + r*Math.sin((ang+180-a)*d2r);
-		x3 = ox + r*Math.cos((ang-a)*d2r);	
+		x3 = ox + r*Math.cos((ang-a)*d2r);
 		y3 = oy + r*Math.sin((ang-a)*d2r);
 		x4 = ox + r*Math.cos((ang+180+a)*d2r);
 		y4 = oy + r*Math.sin((ang+180+a)*d2r);
@@ -1082,7 +1092,7 @@
 			this.box.path(path+'z').attr({'fill':'315-'+this.colours.nut,'stroke':0}),
 			this.box.circle(ox,oy,r*0.7,r*0.7).attr({'fill':this.colours.screw,'stroke':0})
 		)
-		return this;		
+		return this;
 	}
 
 	MessierBingo.prototype.keypress = function(charCode,event){
@@ -1234,12 +1244,12 @@
 	Pantograph.prototype.remove = function(){
 		this.group.remove();
 	}
-	
+
 	Pantograph.prototype.attr = function(attr){
 		this.group.attr(attr);
 		return this;
 	}
-	
+
 	Pantograph.prototype.toggle = function(t,fn){
 		if(typeof t!=="number") t = 300;
 		var _obj = this;
@@ -1277,7 +1287,7 @@
 				_obj.group.animate({'path':_obj.pathon},t);
 				_obj.panel.animate({'width':(100*_obj.me.getScale()*(_obj.wout-_obj.won)/_obj.me.wide)+'%'},t);
 				_obj.panel.find('.inner').css({'width':_obj.me.getScale()*(_obj.wout-_obj.won)+'px'});
-			});		
+			});
 		}else{
 			if(typeof fn==="function") fn.call(this.me);
 		}
@@ -1291,27 +1301,27 @@
 
 		return this;
 	}
-	
+
 	/*!
 	 * The following copyright notice may not be removed under any circumstances.
-	 * 
+	 *
 	 * Copyright:
 	 * Copyright 1990, 1991, 1993, 2001 Adobe Systems Incorporated.  All Rights
 	 * Reserved.
-	 * 
+	 *
 	 * Trademark:
 	 * Birch is either a registered trademark or a trademark of Adobe Systems
 	 * Incorporated in the United States and/or other countries.
-	 * 
+	 *
 	 * Full name:
 	 * BirchStd
-	 * 
+	 *
 	 * Designer:
 	 * Kim Buker Chansler
-	 * 
+	 *
 	 * Vendor URL:
 	 * http://www.adobe.com/type
-	 * 
+	 *
 	 * License information:
 	 * http://www.adobe.com/type/legal.html
 	 */
