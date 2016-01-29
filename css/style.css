@@ -1,0 +1,166 @@
+html { height: 100%; overflow: auto; }
+
+body {
+	text-align: center;
+	font-size: 1em;
+	color: #202020;
+	margin: 0px;
+	padding: 0px;
+	background: #202020;
+}
+.jsonly { display: none; }
+
+h1, h2, h3, h4, #nametoggle, #insttoggle { margin:0px; font-family: "Birch Std", Didot, "Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif; }
+
+#outer {
+	width: 1016px;
+	height: 610px;
+	margin: 0 auto;
+	padding: 2%;
+	position: relative;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	clear: both;
+	overflow: visible;
+	position: relative;
+	background: #c5b39f;
+	background: #c5b39f url('../images/texturemap.jpg') no-repeat center center;
+	/* Scale image - Safari 3+/Chrome Whatever+/IE 9+/Opera 10+/Firefox 3.6+ */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-shadow: 2px 3px 15px #000000;
+	z-index: 1;
+}
+
+#paper {
+	z-index: 1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#portal {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+#sky,#glass,#portalinner,#glass-small {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#sky {
+	border-radius: 100%;
+	overflow: hidden;
+	z-index: 3;
+}
+#glass-small, #glass, #portalinner {
+	z-index: 4;
+}
+
+#sky img, #glass img, #glass-small img {
+	width: 100%;
+	height: 100%;
+}
+
+#title {
+	position: absolute;
+	top: 8%;
+	right: 18.5%;
+	font-size: 1em;
+	width: 34%;
+	bottom: 83%;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#title h1 {
+	line-height: 1.5em;
+	font-size: 2.4em;
+}
+
+#nametoggle {
+	position: absolute;
+	top: 31.95%;
+	left: 7.5%;
+	height: 3.5%;
+	width: 11.5%;
+	cursor: pointer;
+	z-index:5;
+}
+
+#nametoggle a { display: block; }
+
+#messier, #panel {
+	position: absolute;
+	background: white;
+	background: white url('../images/paper.jpg') no-repeat center center;
+	/* Scale image - Safari 3+/Chrome Whatever+/IE 9+/Opera 10+/Firefox 3.6+ */
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: left;
+	font-size: 0.7em;
+	overflow: hidden;
+	border: 5px solid #766a5c;
+	box-shadow: 1px 1px 3px #2a2521;
+	font-family: "Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif;
+	z-index: 5;
+}
+#panel {
+	top: 38%;
+	left: 2%;
+	width: 0%;
+	height: 52%;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-left: 0px;
+}
+#messier {
+	bottom: 2.604%;
+	left: 5%;
+	width: 30%;
+	height: 0%;
+	z-index: 3;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom: 0px;
+	box-shadow: 1px -1px 3px #2a2521;
+	display: none;
+}
+.panel .content {
+	position: relative;
+}
+.panel .inner {
+	position: absolute;
+	right: 0px;
+}
+.panel .padded {
+	margin: 1em;
+}
+.panel h3 {
+	font-size: 2em;
+	font-family: "Bodoni MT", "Century Schoolbook", "Niagara Solid", Utopia, Georgia, Times, "Times New Roman", serif;
+}
+.panel a {
+	text-decoration: none;
+	color: #766a5c;
+}
+.panel p {
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+}
+.panel .altname {
+	margin-top: 0px;
+	font-weight: bold;
+}
+.hidden { display: none; }
