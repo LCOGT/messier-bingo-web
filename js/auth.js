@@ -103,7 +103,7 @@ function submit_to_serol(object, start, end){
       // Stop them from accidentally submitting a second time
     })
     .fail(function(resp){
-      var msg = resp.responseJSON[0]['non_field_errors'][0];
+      var msg = resp.responseJSON['requests'][0]['non_field_errors'][0];
       var content = "<h3>Error!</h3><p>Sorry, there was a problem submitting your request.</p><p>"+msg+"</p>";
 			$('#message-content').html(content);
 			closePopup('4000');

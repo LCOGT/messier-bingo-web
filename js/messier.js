@@ -240,7 +240,7 @@
 				"image": { "label": "Image by:" },
 				"original": "Original image"
 			},
-			"instructions": "<h3>Instructions</h3><p>Get your <a href=\"http://lcogt.net/education/messierbingo\">bingo card</a> and mark it each time one of your objects appears.</p><p>When you have marked all the objects on your card shout 'Bingo', 'House' or even 'Messier' to win.</p><p>To select a new Messier object press the arrow in the bottom right.</p>",
+			"instructions": "<h3>Instructions</h3><p>Get your <a href=\"https://lco.global/education/messierbingo\">bingo card</a> and mark it each time one of your objects appears.</p><p>When you have marked all the objects on your card shout 'Bingo', 'House' or even 'Messier' to win.</p><p>To select a new Messier object press the arrow in the bottom right.</p>",
 			"messier": {
 				"name": "Charles Messier",
 				"bio": "<p><a href=\"https://en.wikipedia.org/wiki/Charles_Messier\" target=\"messier\">Charles Messier</a> was born in 1730 and his interest in astronomy was sparked by a spectacular, six-tailed comet when he was 14.</p><p>He moved to Paris and wanted to become famous by discovering comets. When he looked through his telescope he often re-discovered objects which were already known and were not comets. To make sure he didn't waste time, each time he found an object that did not move in the sky he catalogued it. His famous list contains 110 objects.</p>"
@@ -544,13 +544,10 @@
 			m = this.catalogue[i]
 			current = $.grep(data['targets'], function(e){ return e.name == m['m']; });
 			if (current[0]) {
-				if (current[0].aperture == 'any'){ m['aperture'] = '0m4'; }
-				else if (current[0].aperture == 'sml'){ m['aperture'] = '0m4'; }
-				else { m['aperture'] = current[0].aperture; }
+				m['aperture'] = '0m4';
 				m['ra'] = current[0].ra ;
 				m['dec'] = current[0].dec ;
 				m['filters'] = current[0].filters ;
-        console.log(m)
 			} else {
 				m['exp'] = 0 ;
 				m['aperture'] = 'none' ;
@@ -811,8 +808,8 @@
 			this.arc.push(this.box.rect((bb.x-(lh-fs)),(this.chrome.portal.oy+this.chrome.portal.r[0]),bb.width+(lh-fs)*2,lh).attr({'fill':this.colours.white,'stroke':0,'cursor':'pointer'}));
 			this.poweredby.toFront();
 		}
-		this.arc[this.arc.length-1].click(function(e){ window.location.href = "http://lcogt.net/education/messierbingo"; });
-		this.poweredby.click(function(e){ window.location.href = "http://lcogt.net/education/messierbingo"; });
+		this.arc[this.arc.length-1].click(function(e){ window.location.href = "https://lco.global/education/messierbingo"; });
+		this.poweredby.click(function(e){ window.location.href = "https://lco.global/education/messierbingo"; });
 		this.dialtext = this.box.printArcLabel(this,this.phrasebook.information.label,this.box.getFont("Birch Std"),this.chrome.dial.fontsize,this.chrome.dial.fontsize*0.01,this.chrome.dial.dr,this.chrome.dial.ox,this.chrome.dial.oy,this.chrome.dial.r,270,false).attr({'fill':this.colours.deepshadow,'stroke':0});
 		this.dialtexton = this.box.printArcLabel(this,this.phrasebook.information.on,this.box.getFont("Birch Std"),this.chrome.dial.fontsize,this.chrome.dial.fontsize*0.1,this.chrome.dial.dr,this.chrome.dial.ox,this.chrome.dial.oy,this.chrome.dial.r,90+this.dialang,false).attr({'fill':this.colours.deepshadow,'stroke':0});
 		this.dialtextoff = this.box.printArcLabel(this,this.phrasebook.information.off,this.box.getFont("Birch Std"),this.chrome.dial.fontsize,this.chrome.dial.fontsize*0.1,this.chrome.dial.dr,this.chrome.dial.ox,this.chrome.dial.oy,this.chrome.dial.r,90-this.dialang+4,false).attr({'fill':this.colours.deepshadow,'stroke':0});
@@ -1016,7 +1013,7 @@
 			var avm_name = (this.phrasebook.catalogue ? this.phrasebook.catalogue[m.m].type : m.type)
 			var object_type_text = '<strong>'+this.phrasebook.information.type.label+'</strong><br/> '+avm_name;
 			$('#make-request').attr('data-objectid', m.m);
-			if (m['aperture'] == 'none' || this.authenticated == false){
+			if (m['aperture'] == 'none' || localStorage.getItem("token") == null) {
 				$('#observe_button').hide();
 			}else{
 				$('#observe_button').show();
