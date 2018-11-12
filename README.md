@@ -2,11 +2,11 @@
 
 [Charles Messier](https://en.wikipedia.org/wiki/Charles_Messier) lived in Paris in the 18th century. He wanted to become famous by discovering comets. When he looked through his telescope he often re-discovered objects which were already known and were not comets. So he didn't waste time, each time he found an object that did not move in the sky he catalogued it.
 
-This project creates a bingo game based around the 110 objects in the Messier catalogue displaying images of each object taken with the LCOGT network.
+This project creates a bingo game based around the 110 objects in the Messier catalogue displaying images of each object taken with the LCO network.
 
 # About this version
 
-There are 2 versions of Messier Bingo. This is the stand alone version. You can download this repos and play this version without an internet connection. It does not have the ability to schedule LCOGT.
+This is the stand alone version. You can download this repos and play this version without an internet connection. It still has the ability to schedule LCO observations but only with an activate internet connection.
 
 # How to play
 
@@ -18,4 +18,4 @@ There are 2 versions of Messier Bingo. This is the stand alone version. You can 
 
 Authors
 -------
-Created by [Edward Gomez](http://edward.gomez.me.uk), interface designed by [Charlotte Provot](http://www.charlotteprovot.com/), code developed by [Stuart Lowe](http://strudel.org.uk) for [Las Cumbres Observatory Global Telescope](http://lcogt.net/). LCOGT is a private operating foundation, building a global network of telescopes for professional research and citizen investigations.
+Created by [Edward Gomez](http://edward.gomez.me.uk), interface designed by [Charlotte Provot](http://www.charlotteprovot.com/), code developed by [Stuart Lowe](http://strudel.org.uk) for [Las Cumbres Observatory](http://lco.global/). LCO is a private operating foundation, building a global network of telescopes for professional research and citizen investigations.
