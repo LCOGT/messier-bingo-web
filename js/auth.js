@@ -35,6 +35,8 @@ function login(username, password, callback){
     localStorage.setItem('token', data.token);
     getProposals();
     callback(true);
+    $('.loggedin').show();
+    $('.not_loggedin').hide();
   }).fail(function(){
     console.log("Failed!")
     callback(false);
