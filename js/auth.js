@@ -14,6 +14,8 @@ $.ajaxPrefilter(function(options, originalOptions, jqXHR){
 function getProposals(){
   var p;
   $.getJSON(apiRoot + 'profile/', function(data){
+    console.log(data.proposals)
+    console.log(proposal_list)
     for (i=0;i<data.proposals.length;i++){
       p = data.proposals[i]['id'];
       if (proposal_list.includes(p)) {
@@ -103,9 +105,18 @@ function submit_to_serol(object, start, end){
       // Stop them from accidentally submitting a second time
     })
     .fail(function(resp){
-      var msg = resp.responseJSON['requests'][0]['non_field_errors'][0];
+      var msg;
+      if (resp.responseJSON['requests'][0]['non_field_errors'] != undefined){
+        msg = resp.responseJSON['requests'][0]['non_field_errors'][0];
+      } else if (resp.responseJSON['requests'][0]['windows'][0]['non_field_errors'] != undefined){
+        msg = resp.responseJSON['requests'][0]['windows'][0]['non_field_errors'][0];
+      } else {
+        msg = "An error occured.";
+      }
+
       var content = "<h3>Error!</h3><p>Sorry, there was a problem submitting your request.</p><p>"+msg+"</p>";
 			$('#message-content').html(content);
 			closePopup('4000');
+
     });
 }
