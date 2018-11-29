@@ -1,1 +1,1 @@
-{"name":"M22","ra":279.1005,"dec":-23.9061,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/08/05/process-581-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/08/05/process-581-1_120.jpg","observer_name":"St.Brigid's School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M22","ra":279.1005,"dec":-23.9061,"image":"/images/objects/process-581-1.jpg","observer_name":"St.Brigid's School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

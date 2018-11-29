@@ -1,1 +1,1 @@
-{"name":"M64","ra":194.184,"dec":21.6847,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/04/03/process-1076-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/04/03/process-1076-1_120.jpg","observer_name":"Robert Smyth Academy","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M64","ra":194.184,"dec":21.6847,"image":"/images/objects/process-1076-1.jpg","observer_name":"Robert Smyth Academy","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

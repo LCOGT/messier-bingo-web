@@ -1,1 +1,1 @@
-{"name":"M58","ra":189.4335,"dec":11.8194,"image":"http://lcogt.net/files/messier/M58.jpg","image_thumb":"http://lcogt.net/files/messier/M58_thumbnail.jpg","observer_name":"Jake Hughes, Cardiff University","avm_code":"5.1.1","telescope":{"name":"Siding Spring 1-meter B","aperture":null}}
+{"name":"M58","ra":189.4335,"dec":11.8194,"image":"/images/objects/M58.jpg","observer_name":"Jake Hughes, Cardiff University","avm_code":"5.1.1","telescope":{"name":"Siding Spring 1-meter B","aperture":"1m0"}}

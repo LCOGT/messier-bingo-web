@@ -1,1 +1,1 @@
-{"name":"M107","ra":248.13,"dec":-13.0503,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/05/03/process-2490-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/05/03/process-2490-1_120.jpg","observer_name":"UoG12 Simon Shelford","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M107","ra":248.13,"dec":-13.0503,"image":"/images/objects/process-2490-1.jpg","observer_name":"UoG12 Simon Shelford","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

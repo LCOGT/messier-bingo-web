@@ -1,1 +1,1 @@
-{"name":"M49","ra":187.443,"dec":7.99944,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/03/05/process-305-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/03/05/process-305-2_120.jpg","observer_name":"Latymer Upper School","avm_code":"5.3.2.2","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M49","ra":187.443,"dec":7.99944,"image":"/images/objects/process-305-2.jpg","observer_name":"Latymer Upper School","avm_code":"5.3.2.2","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

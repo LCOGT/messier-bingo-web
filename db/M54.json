@@ -1,1 +1,1 @@
-{"name":"M54","ra":283.7625,"dec":-30.479,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/05/03/process-2505-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/05/03/process-2505-1_120.jpg","observer_name":"The Kingsley School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M54","ra":283.7625,"dec":-30.479,"image":"/images/objects/process-2505-1.jpg","observer_name":"The Kingsley School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

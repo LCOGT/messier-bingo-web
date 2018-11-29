@@ -1,1 +1,1 @@
-{"name":"M2","ra":323.364,"dec":-0.82419,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/10/22/process-3551-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/10/22/process-3551-2_120.jpg","observer_name":"Moreton Hall School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M2","ra":323.364,"dec":-0.82419,"image":"/images/objects/process-3551-2.jpg","observer_name":"Moreton Hall School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

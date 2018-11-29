@@ -1,1 +1,1 @@
-{"name":"M21","ra":271.056,"dec":-22.49,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/04/14/process-350-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/04/14/process-350-1_120.jpg","observer_name":"colaiste chriost ri","avm_code":"3.6.4.1","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M21","ra":271.056,"dec":-22.49,"image":"/images/objects/process-350-1.jpg","observer_name":"colaiste chriost ri","avm_code":"3.6.4.1","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

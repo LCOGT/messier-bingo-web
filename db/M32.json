@@ -1,1 +1,1 @@
-{"name":"M32","ra":10.674165,"dec":40.8653,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/09/21/process-1530-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/09/21/process-1530-1_120.jpg","observer_name":"Glebe School","avm_code":"5.2.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M32","ra":10.674165,"dec":40.8653,"image":"/images/objects/process-1530-1.jpg","observer_name":"Glebe School","avm_code":"5.2.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

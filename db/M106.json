@@ -1,1 +1,1 @@
-{"name":"M106","ra":184.7415,"dec":47.3044,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2007/04/29/process-672-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2007/04/29/process-672-1_120.jpg","observer_name":"JD Armstrong, IfA Hawaii","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M106","ra":184.7415,"dec":47.3044,"image":"/images/objects/process-672-1.jpg","observer_name":"JD Armstrong, IfA Hawaii","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

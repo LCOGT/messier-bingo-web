@@ -1,1 +1,1 @@
-{"name":"M40","ra":185.5215,"dec":58.0831,"image":"http://lcogt.net/files/messier/M40.jpg","image_thumb":"http://lcogt.net/files/messier/M40_thumbnail.jpg","observer_name":"Jake Hughes, Cardiff University","avm_code":"3.6.3","telescope":{"name":"McDonald 1-meter","aperture":null}}
+{"name":"M40","ra":185.5215,"dec":58.0831,"image":"/images/objects/M40.jpg","observer_name":"Jake Hughes, Cardiff University","avm_code":"3.6.3","telescope":{"name":"McDonald 1-meter","aperture":"1m0"}}

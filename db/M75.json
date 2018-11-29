@@ -1,1 +1,1 @@
-{"name":"M75","ra":301.521,"dec":-21.921,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/10/09/process-3227-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/10/09/process-3227-2_120.jpg","observer_name":"JFS School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M75","ra":301.521,"dec":-21.921,"image":"/images/objects/process-3227-2.jpg","observer_name":"JFS School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

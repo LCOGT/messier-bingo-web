@@ -1,1 +1,1 @@
-{"name":"M74","ra":24.17505,"dec":15.7867,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/09/30/process-1858-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/09/30/process-1858-1_120.jpg","observer_name":"Ashford Senior School","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M74","ra":24.17505,"dec":15.7867,"image":"/images/objects/process-1858-1.jpg","observer_name":"Ashford Senior School","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

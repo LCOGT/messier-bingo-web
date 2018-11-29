@@ -1,1 +1,1 @@
-{"name":"M92","ra":259.2795,"dec":43.1373,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/03/16/process-4846-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/03/16/process-4846-1_120.jpg","observer_name":"Ysgol Glan Clwyd","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M92","ra":259.2795,"dec":43.1373,"image":"/images/objects/process-4846-1.jpg","observer_name":"Ysgol Glan Clwyd","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

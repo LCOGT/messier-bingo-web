@@ -1,1 +1,1 @@
-{"name":"M61","ra":185.478,"dec":4.47222,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/03/07/process-627-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/03/07/process-627-1_120.jpg","observer_name":"Bury College","avm_code":"5.3.2.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M61","ra":185.478,"dec":4.47222,"image":"/images/objects/process-627-1.jpg","observer_name":"Bury College","avm_code":"5.3.2.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

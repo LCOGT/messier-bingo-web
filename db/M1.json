@@ -1,13 +1,1 @@
-{
-  "name": "M1",
-  "ra": 83.6292,
-  "dec": 22.0167,
-  "image": "https://lco.global/files/rtisba/faulkes-rti/imagearchive/2013/11/27/process-3925-2.jpg",
-  "image_thumb": "https://lco.global/files/rtisba/faulkes-rti/imagearchive/2013/11/27/process-3925-2_120.jpg",
-  "observer_name": "Wellington School",
-  "avm_code": "4.1.4",
-  "telescope": {
-    "name": "Faulkes Telescope South",
-    "aperture": null
-  }
-}
+{"name":"M1","ra":83.6292,"dec":22.0167,"image":"/images/objects/process-3925-2.jpg","observer_name":"Wellington School","avm_code":"4.1.4","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

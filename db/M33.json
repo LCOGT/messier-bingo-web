@@ -1,1 +1,1 @@
-{"name":"M33","ra":23.4621,"dec":30.6603,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/11/22/process-5989-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/11/22/process-5989-1_120.jpg","observer_name":"Kenton Primary School ","avm_code":"5.5.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M33","ra":23.4621,"dec":30.6603,"image":"/images/objects/process-5989-1.jpg","observer_name":"Kenton Primary School ","avm_code":"5.5.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

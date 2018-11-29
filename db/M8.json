@@ -1,1 +1,1 @@
-{"name":"M8","ra":270.9225,"dec":-24.3802,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/07/13/process-1792-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/07/13/process-1792-2_120.jpg","observer_name":"Burton Borough School","avm_code":"4.2.1.1","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M8","ra":270.9225,"dec":-24.3802,"image":"/images/objects/process-1792-2.jpg","observer_name":"Burton Borough School","avm_code":"4.2.1.1","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

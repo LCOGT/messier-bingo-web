@@ -1,1 +1,1 @@
-{"name":"M47","ra":114.14595,"dec":-14.4826,"image":"http://lcogt.net/files/messier/M47.jpg","image_thumb":"http://lcogt.net/files/messier/M47_thumbnail.jpg","observer_name":"Jake Hughes, Cardiff University","avm_code":"3.6.4.1","telescope":{"name":"Sutherland 1-meter A","aperture":null}}
+{"name":"M47","ra":114.14595,"dec":-14.4826,"image":"/images/objects/M47.jpg","observer_name":"Jake Hughes, Cardiff University","avm_code":"3.6.4.1","telescope":{"name":"Sutherland 1-meter A","aperture":"1m0"}}

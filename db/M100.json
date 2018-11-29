@@ -1,1 +1,1 @@
-{"name":"M100","ra":185.73,"dec":15.8228,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/03/15/process-3226-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/03/15/process-3226-2_120.jpg","observer_name":"BBC Stargazing","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M100","ra":185.73,"dec":15.8228,"image":"/images/objects/process-3226-2.jpg","observer_name":"BBC Stargazing","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

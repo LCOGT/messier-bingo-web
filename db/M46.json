@@ -1,1 +1,1 @@
-{"name":"M46","ra":115.4625,"dec":-14.75,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2005/11/26/process-12320-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2005/11/26/process-12320-1_120.jpg","observer_name":"Oundle School","avm_code":"3.6.4","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M46","ra":115.4625,"dec":-14.75,"image":"/images/objects/process-12320-1.jpg","observer_name":"Oundle School","avm_code":"3.6.4","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

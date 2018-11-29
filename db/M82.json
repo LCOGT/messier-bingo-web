@@ -1,1 +1,1 @@
-{"name":"M82","ra":148.97505,"dec":69.6825,"image":"http://lcogt.net/files/bfulton/m82_Lrgb_flat_small.jpg","image_thumb":"http://lcogt.net/files/styles/fourcol-image/public/bfulton/m82_Lrgb_flat_small.jpg","observer_name":"BJ Fulton","avm_code":"5.1.7","telescope":{"name":"Sedgwick Observatory","aperture":null}}
+{"name":"M82","ra":148.97505,"dec":69.6825,"image":"/images/objects/m82_Lrgb_flat_small.jpg","observer_name":"BJ Fulton","avm_code":"5.1.7","telescope":{"name":"Sedgwick Observatory","aperture":"0m8"}}

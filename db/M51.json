@@ -1,1 +1,1 @@
-{"name":"M51","ra":202.4715,"dec":47.1967,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/04/26/process-2408-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/04/26/process-2408-1_120.jpg","observer_name":"The Burgate School","avm_code":"5.3.2.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M51","ra":202.4715,"dec":47.1967,"image":"/images/objects/process-2408-1.jpg","observer_name":"The Burgate School","avm_code":"5.3.2.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

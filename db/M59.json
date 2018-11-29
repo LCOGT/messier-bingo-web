@@ -1,1 +1,1 @@
-{"name":"M59","ra":190.5105,"dec":11.6467,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2010/02/19/process-1048-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2010/02/19/process-1048-1_120.jpg","observer_name":"Herstmonceux Megacycles","avm_code":"5.1.4","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M59","ra":190.5105,"dec":11.6467,"image":"/images/objects/process-1048-1.jpg","observer_name":"Herstmonceux Megacycles","avm_code":"5.1.4","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

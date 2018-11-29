@@ -1,13 +1,1 @@
-{
-  "name": "M19",
-  "ra": 255.657,
-  "dec": -26.2675,
-  "image": "http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/02/01/process-151-1.jpg",
-  "image_thumb": "http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/02/01/process-151-1_120.jpg",
-  "observer_name": "UoG11 - Katharine Vine",
-  "avm_code": "3.6.4.2",
-  "telescope": {
-    "name": "Faulkes Telescope North",
-    "aperture": null
-  }
-}
+{"name":"M19","ra":255.657,"dec":-26.2675,"image":"/images/objects/process-151-1.jpg","observer_name":"UoG11 - Katharine Vine","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

@@ -1,1 +1,1 @@
-{"name":"M23","ra":269.2695,"dec":-18.9853,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/04/03/process-5299-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/04/03/process-5299-1_120.jpg","observer_name":"Longfield School","avm_code":"3.6.4","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M23","ra":269.2695,"dec":-18.9853,"image":"/images/objects/process-5299-1.jpg","observer_name":"Longfield School","avm_code":"3.6.4","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

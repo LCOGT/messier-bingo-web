@@ -1,1 +1,1 @@
-{"name":"M94","ra":192.723,"dec":41.1192,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/01/28/process-3199-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/01/28/process-3199-1_120.jpg","observer_name":"Victoria College","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M94","ra":192.723,"dec":41.1192,"image":"/images/objects/process-3199-1.jpg","observer_name":"Victoria College","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

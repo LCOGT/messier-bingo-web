@@ -1,1 +1,1 @@
-{"name":"M66","ra":170.0595,"dec":12.995,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/02/05/process-210-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/02/05/process-210-1_120.jpg","observer_name":"Latymer Upper School","avm_code":"5.3.2.4","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M66","ra":170.0595,"dec":12.995,"image":"/images/objects/process-210-1.jpg","observer_name":"Latymer Upper School","avm_code":"5.3.2.4","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

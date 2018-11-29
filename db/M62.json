@@ -1,1 +1,1 @@
-{"name":"M62","ra":255.3045,"dec":-30.1142,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2010/06/15/process-18-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2010/06/15/process-18-2_120.jpg","observer_name":"Swakeleys School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M62","ra":255.3045,"dec":-30.1142,"image":"/images/objects/process-18-2.jpg","observer_name":"Swakeleys School","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

@@ -1,1 +1,1 @@
-{"name":"M5","ra":229.6365,"dec":2.08187,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/03/25/process-909-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/03/25/process-909-1_120.jpg","observer_name":"Glenlola Collegiate","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M5","ra":229.6365,"dec":2.08187,"image":"/images/objects/process-909-1.jpg","observer_name":"Glenlola Collegiate","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

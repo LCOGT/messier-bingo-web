@@ -1,1 +1,1 @@
-{"name":"M13","ra":250.4235,"dec":36.4613,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/06/18/process-3409-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/06/18/process-3409-1_120.jpg","observer_name":"St Michael's School ","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M13","ra":250.4235,"dec":36.4613,"image":"/images/objects/process-3409-1.jpg","observer_name":"St Michael's School ","avm_code":"3.6.4.2","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

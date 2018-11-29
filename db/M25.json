@@ -1,1 +1,1 @@
-{"name":"M25","ra":277.95,"dec":-19.1133,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/08/29/process-311-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/08/29/process-311-2_120.jpg","observer_name":"Bexhill High School","avm_code":"3.6.4","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M25","ra":277.95,"dec":-19.1133,"image":"/images/objects/process-311-2.jpg","observer_name":"Bexhill High School","avm_code":"3.6.4","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

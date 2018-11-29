@@ -1,1 +1,1 @@
-{"name":"M105","ra":161.958,"dec":12.5825,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2010/01/21/process-32-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2010/01/21/process-32-1_120.jpg","observer_name":"West Monmouth School","avm_code":"5.1.4","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M105","ra":161.958,"dec":12.5825,"image":"/images/objects/process-32-1.jpg","observer_name":"West Monmouth School","avm_code":"5.1.4","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}

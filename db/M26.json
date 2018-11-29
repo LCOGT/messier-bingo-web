@@ -1,1 +1,1 @@
-{"name":"M26","ra":281.328,"dec":-9.38361,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/09/30/process-1245-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2011/09/30/process-1245-2_120.jpg","observer_name":"St Michaels","avm_code":"3.6.4.1","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M26","ra":281.328,"dec":-9.38361,"image":"/images/objects/process-1245-2.jpg","observer_name":"St Michaels","avm_code":"3.6.4.1","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

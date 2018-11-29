@@ -1,1 +1,1 @@
-{"name":"M99","ra":184.7055,"dec":14.4186,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/05/16/process-4426-2.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2012/05/16/process-4426-2_120.jpg","observer_name":"St Davids College","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope South","aperture":null}}
+{"name":"M99","ra":184.7055,"dec":14.4186,"image":"/images/objects/process-4426-2.jpg","observer_name":"St Davids College","avm_code":"5.1.1","telescope":{"name":"Faulkes Telescope South","aperture":"2m0"}}

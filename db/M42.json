@@ -1,1 +1,1 @@
-{"name":"M42","ra":83.81865,"dec":-5.38968,"image":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/11/22/process-6000-1.jpg","image_thumb":"http://lcogt.net/files/rtisba/faulkes-rti/imagearchive/2013/11/22/process-6000-1_120.jpg","observer_name":"Westminster School","avm_code":"4.2.1.1","telescope":{"name":"Faulkes Telescope North","aperture":null}}
+{"name":"M42","ra":83.81865,"dec":-5.38968,"image":"/images/objects/process-6000-1.jpg","observer_name":"Westminster School","avm_code":"4.2.1.1","telescope":{"name":"Faulkes Telescope North","aperture":"2m0"}}
