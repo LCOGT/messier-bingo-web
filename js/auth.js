@@ -53,22 +53,36 @@ function logout(){
 
 function submit_to_serol(object, start, end){
   var target = {
-    "type": "SIDEREAL",
+    "type": "ICRS",
     "name": object['m'],
     "ra": object['ra'],
-    "dec": object['dec']
+    "dec": object['dec'],
+    'epoch': 2000
   }
-  var molecules = new Array();
+  var constraints = constraints = {
+    'max_airmass': 1.6,
+    'min_lunar_distance': 30
+  }
+  var inst_configs = Array();
   for (i=0;i<object['filters'].length;i++){
       var mol = {
-              "type": "EXPOSE",
-              "instrument_name": "0M4-SCICAM-SBIG",
-              "filter": object['filters'][i]['name'],
-              "exposure_time": object['filters'][i]['exposure'],
-              "exposure_count": 1
+                'exposure_time': object['filters'][i]['exposure'],
+                'exposure_count': 1,
+                'optical_elements': {
+                    'filter': object['filters'][i]['name']
+                }
             }
-      molecules.push(mol)
+      inst_configs.push(mol)
   }
+  var config  = [{
+        'type': 'EXPOSE',
+        'instrument_type': '0M4-SCICAM-SBIG',
+        'target': target,
+        'constraints': constraints,
+        'acquisition_config': {},
+        'guiding_config': {},
+        'instrument_configs': inst_configs
+    }]
   var timewindow = {
     "start": start,
     "end": end
@@ -77,13 +91,13 @@ function submit_to_serol(object, start, end){
     "location":{"telescope_class":"0m4"},
     "constraints":{"max_airmass":2.0},
     "target": target,
-    "molecules": molecules,
+    "configurations": config,
     "windows": [timewindow],
     "observation_note" : "Serol",
     "type":"request"
   }
   var data = {
-      "group_id": "mb_"+start.substr(0,10)+"_"+object['m'],
+      "name": "mb_"+start.substr(0,10)+"_"+object['m'],
       "proposal": localStorage.getItem("proposal_code"),
       "ipp_value": 1.05,
       "operator": "SINGLE",
@@ -91,14 +105,14 @@ function submit_to_serol(object, start, end){
       "requests": [request],
   }
   $.ajax({
-    url: 'https://observe.lco.global/api/userrequests/',
+    url: 'https://observe.lco.global/api/requestgroups/',
     type: 'post',
     data: JSON.stringify(data),
     headers: {'Authorization': 'Token '+localStorage.getItem("token")},
     dataType: 'json',
     contentType: 'application/json'})
     .done(function(resp){
-      var content = "<h3>Success!</h3><p>Your image will be ready in the next week.</p><img src='https://lco.global/files/edu/serol/serol_looking_though_telescope_sm.png'>"
+      var content = "<h3>Success!</h3><p>Your image will be ready in the next week.</p>"
       $('#message-content').html(content);
       $('#observe_button').hide();
       closePopup('2000');
