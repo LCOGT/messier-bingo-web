@@ -11,19 +11,48 @@ $.ajaxPrefilter(function(options, originalOptions, jqXHR){
   }
 });
 
+async function matchProposals(){
+  var match=false;
+  var proposal;
+  const proposals = await getProposals();
+  for (i=0;i<proposals.length;i++){
+    proposal = proposals[i].id
+    const result = await suitabilityCheck(proposal);
+    if (result == true){
+        match = true;
+    }
+    if (match){
+      return proposal
+    }
+  }
+  if (proposal == undefined){
+    return false
+  }
+}
+
 function getProposals(){
-  var p;
-  $.getJSON(apiRoot + 'profile/', function(data){
-    console.log(data.proposals)
-    console.log(proposal_list)
+  var proposals = Array()
+  return $.getJSON(apiRoot + 'profile/').then(function(data){
     for (i=0;i<data.proposals.length;i++){
-      p = data.proposals[i]['id'];
-      if (proposal_list.includes(p)) {
-        localStorage.setItem('proposal_code', p)
-        return
+      if (data.proposals[i]['current']) {
+        proposals.push(data.proposals[i]);
       }
     }
+    return proposals;
   });
+}
+
+function suitabilityCheck(proposal_code){
+    return $.getJSON(apiRoot + 'proposals/'+proposal_code+'/').then(function(data){
+      for (i=0;i<data.timeallocation_set.length;i++){
+        if (data.timeallocation_set[i].instrument_type == '0M4-SCICAM-SBIG'){
+          if (data.timeallocation_set[i].std_allocation >  data.timeallocation_set[i].std_time_used){
+            return true
+          }
+        }
+      }
+      return false
+    });
 }
 
 function login(username, password, callback){
@@ -35,13 +64,21 @@ function login(username, password, callback){
     }
   ).done(function(data){
     localStorage.setItem('token', data.token);
-    getProposals();
-    callback(true);
-    $('.loggedin').show();
-    $('.not_loggedin').hide();
+    matchProposals().then(function(proposal){
+      if (proposal){
+        localStorage.setItem('proposal_code',proposal)
+        callback({success:true});
+        $('.loggedin').show();
+        $('.not_loggedin').hide();
+      }else{
+        callback({success:false, msg:"You do not have 0.4m credit available"});
+        localStorage.removeItem('token');
+      }
+    });
+
   }).fail(function(){
-    console.log("Failed!")
-    callback(false);
+    console.error("Login Failed!")
+    callback({success:false, msg:"Login Failed"});
   });
 }
 

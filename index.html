@@ -12,7 +12,6 @@
 	<script language="javascript" type="text/javascript" src="js/messier.js"></script>
   	<script language="javascript" type="text/javascript" src="js/auth.js"></script>
 	<script type="text/javascript">
-      var proposal_list = ["LCOEPO2014B-010", "FTPEPO2014A-004", "LCOEPO2014B-003", "LCOEPO2014B-007", "LCOEPO2018B-001"];
 			var mb;
 			$(document).ready(function(){
 			var user_auth;
@@ -67,13 +66,12 @@
 
         $(document).on('click','#login-btn',function(){
       	  login($('#email').val(), $('#password').val(), function(result){
-            console.log(result)
-      	    if(result){
+      	    if(result.success){
       	      $('#loginForm').hide();
       	      $('#msg').hide();
               closePopup();
       	    }else{
-      	      $('#msg').html('Login Failed').show();
+      	      $('#msg').html(result.msg).show();
       	    }
       	  });
       	});
@@ -207,5 +205,10 @@
 			</div>
 		</div>
 	</div>
+  <div id="proposal_select" style="display:none;">
+    <select>
+      <option></option>
+    </select>
+  </div>
 </body>
 </html>
