@@ -14,7 +14,8 @@
 	<script type="text/javascript">
 			var mb;
 			$(document).ready(function(){
-			var user_auth;
+        var user_auth;
+        var observe_content = $('#observe-denied').html()
 			if (localStorage.getItem('token') == null ){
 				var content = $('#controlpane').html()
 				$('#message-popup').removeClass('small-popup');
@@ -33,20 +34,11 @@
 				// Initialise the MessierBingo class
 				mb = $.messierbingo({'user_auth':user_auth,'urlprefix':''});
 
-				if (user_auth) {
-				$(document).on('click','#observe_button',function(event){
-					var content = $('#observe-confirm').html()
-					$('#message-content').html(content);
-					showPopup();
-				});
-      } else {
-				$(document).on('click','#observe_button',function(event){
-					var content = $('#observe-denied').html()
-					$('#message-content').html(content);
-					showPopup();
-				});
-			}
 
+				$(document).on('click','#observe_button',function(event){
+					$('#message-content').html(observe_content);
+					showPopup();
+				});
 
 				$(document).on('click','.login-popup',function(event){
 					var content = $('#login-form').html()
@@ -67,10 +59,12 @@
         $(document).on('click','#login-btn',function(){
       	  login($('#email').val(), $('#password').val(), function(result){
       	    if(result.success){
+              observe_content = $('#observe-confirm').html()
       	      $('#loginForm').hide();
       	      $('#msg').hide();
               closePopup();
       	    }else{
+              observe_content = $('#observe-denied').html()
       	      $('#msg').html(result.msg).show();
       	    }
       	  });
