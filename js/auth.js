@@ -45,7 +45,7 @@ function getProposals(){
 function suitabilityCheck(proposal_code){
     return $.getJSON(apiRoot + 'proposals/'+proposal_code+'/').then(function(data){
       for (i=0;i<data.timeallocation_set.length;i++){
-        if (data.timeallocation_set[i].instrument_type == '0M4-SCICAM-SBIG'){
+        if (data.timeallocation_set[i].instrument_types.includes('0M4-SCICAM-SBIG')){
           if (data.timeallocation_set[i].std_allocation >  data.timeallocation_set[i].std_time_used){
             return true
           }
